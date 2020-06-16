@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Header from "./Header";
 import AddForm from './AddForm';
 import '../styles/App.css';
 
@@ -7,6 +8,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header number={todos.length} />
       <AddForm
         newTodo={(text) => {
           setTodos([...todos, text]);
