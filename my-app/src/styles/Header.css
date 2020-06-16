@@ -1,0 +1,8 @@
+h1 {
+color: black;
+ font-weight: bold;
+ text-decoration-line: underline;
+ text-shadow: 2px 2px 4px #a6a6a6;
+ text-align: center;
+ font-size: 3vw;
+}

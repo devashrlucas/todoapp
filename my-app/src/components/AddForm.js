@@ -1,4 +1,5 @@
 import React, { useState }  from 'react';
+import '../styles/AddForm.css';
 
 const AddForm = ({ newTodo }) => {
   const [text, setText] = useState("");

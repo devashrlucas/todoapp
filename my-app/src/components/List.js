@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import '../styles/List.css';
 
 const List = ({ tasks, deleteTask }) => (
   <ul>
