@@ -1,6 +1,8 @@
 # todoapp
 Simple to-do app using React Hooks. Re-published version of deleted repository.
 
+A live demo of this project can be viewed here: [https://devashrlucas.github.io/todoapp/](https://devashrlucas.github.io/todoapp/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
