@@ -1,17 +1,25 @@
 import React, { useState } from 'react';
 import Header from "./Header";
 import AddForm from './AddForm';
+import List from './List';
 import '../styles/App.css';
 
 function App() {
-  const [todos, setTodos] = useState([]);
+  const [tasks, setTasks] = useState([]);
 
   return (
     <div className="App">
-      <Header number={todos.length} />
+      <Header number={tasks.length} />
       <AddForm
         newTodo={(text) => {
-          setTodos([...todos, text]);
+          setTasks([...tasks, text]);
+        }}
+      />
+      <List
+        tasks={tasks}
+        deleteTask={(taskid) => {
+          const newTasks = tasks.filter((_, id) => id !== taskid);
+          setTasks(newTasks);
         }}
       />
     </div>
